@@ -18,10 +18,10 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
-          - key: name
+          - key: purpose
             operator: In
             values:
-            - pod-1
+            - affinity
         topologyKey: topology.kubernetes.io/zone
   containers:
   # docker run -d --name nginx nginx
